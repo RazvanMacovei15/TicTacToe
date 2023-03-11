@@ -33,7 +33,7 @@ public class TicTacToe extends JFrame implements ActionListener{
         //set the Jframe to exit on close
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        //show the Jframe
+        //show the magical Jframe
         frame.setVisible(true);
 
         currentPlayer = 'x';
