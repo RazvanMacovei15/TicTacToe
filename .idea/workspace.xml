@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43b1aad4-ee97-46be-8c0f-5a692b3196b7" name="Changes" comment="frame + x + 0.">
+    <list default="true" id="43b1aad4-ee97-46be-8c0f-5a692b3196b7" name="Changes" comment="implementing winning conditions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TicTacToe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe.java" afterDir="false" />
     </list>
@@ -98,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678566433730</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="implementing winning conditions">
+      <created>1679652857797</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679652857797</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -117,6 +124,7 @@
     <MESSAGE value="frame + x + 0 &#10;&#10;i just need to code the conditions for winning in an if loop" />
     <MESSAGE value="frame + x + 0" />
     <MESSAGE value="frame + x + 0." />
-    <option name="LAST_COMMIT_MESSAGE" value="frame + x + 0." />
+    <MESSAGE value="implementing winning conditions" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementing winning conditions" />
   </component>
 </project>

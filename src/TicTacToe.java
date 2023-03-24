@@ -2,7 +2,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.beans.EventHandler;
+
+
 
 
 public class TicTacToe extends JFrame implements ActionListener{
@@ -10,8 +11,8 @@ public class TicTacToe extends JFrame implements ActionListener{
 
     private boolean currentPlayerTurn = true ;
     //private boolean player1Turn = true;
-    private int rows = 3;
-    private int cols = 3;
+    private final int rows = 3;
+    private final int cols = 3;
     public TicTacToe(){
         //create a jframe object
         JFrame frame = new JFrame();
@@ -73,26 +74,45 @@ public class TicTacToe extends JFrame implements ActionListener{
             for(int i = 0; i < rows; i++){
                 if(buttons[i][0].getText().equals(buttons[i][1].getText()) && buttons[i][0].getText().equals(buttons[i][2].getText()) && !buttons[i][0].getText().equals("")) {
                     winner = buttons[i][0].getText();
+                    buttons[i][0].setBorder(BorderFactory.createLineBorder(Color.GREEN, 5));
+                    buttons[i][1].setBorder(BorderFactory.createLineBorder(Color.GREEN, 5));
+                    buttons[i][2].setBorder(BorderFactory.createLineBorder(Color.GREEN, 5));
+
                 }
             }
             //check columns
             for(int i = 0; i < cols; i++) {
                 if(buttons[0][i].getText().equals(buttons[1][i].getText()) && buttons[0][i].getText().equals(buttons[2][i].getText()) && !buttons[2][i].getText().equals("")) {
                     winner = buttons[0][i].getText();
+                    buttons[0][i].setBorder(BorderFactory.createLineBorder(Color.GREEN, 5));
+                    buttons[1][i].setBorder(BorderFactory.createLineBorder(Color.GREEN, 5));
+                    buttons[2][i].setBorder(BorderFactory.createLineBorder(Color.GREEN, 5));
+
                 }
             }
             //check diagonals
+
             if (buttons[0][0].getText().equals(buttons[1][1].getText()) && buttons[0][0].getText().equals(buttons[2][2].getText()) && !buttons[0][0].getText().equals("")) {
                 winner = buttons[0][0].getText();
+                buttons[0][0].setBorder(BorderFactory.createLineBorder(Color.GREEN, 5));
+                buttons[1][1].setBorder(BorderFactory.createLineBorder(Color.GREEN, 5));
+                buttons[2][2].setBorder(BorderFactory.createLineBorder(Color.GREEN, 5));
             }
-            if (buttons[0][2].getText().equals(buttons[1][1].getText()) && buttons[0][0].getText().equals(buttons[2][0].getText()) && !buttons[0][2].getText().equals("")) {
-                winner = buttons[0][2].getText();
+            if (buttons[0][2].getText().equals(buttons[1][1].getText()) && buttons[0][2].getText().equals(buttons[2][0].getText()) && !buttons[2][0].getText().equals("")) {
+                winner = buttons[2][0].getText();
+                buttons[0][2].setBorder(BorderFactory.createLineBorder(Color.GREEN, 5));
+                buttons[1][1].setBorder(BorderFactory.createLineBorder(Color.GREEN, 5));
+                buttons[2][0].setBorder(BorderFactory.createLineBorder(Color.GREEN, 5));
             }
 
             if(!winner.equals("")) {
                 JOptionPane.showMessageDialog(this, winner + " wins!");
                 System.exit(0);
             }
+            //else {
+                //JOptionPane.showMessageDialog(this, "draw");
+                //System.exit(0);
+            //}
         }
 
         // Update the button's text and disable it
