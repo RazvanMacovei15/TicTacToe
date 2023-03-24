@@ -44,7 +44,7 @@ public class TicTacToe extends JFrame implements ActionListener{
         frame.setTitle("TicTacToe");
 
         //set the size of the JFrame
-        frame.setSize(600, 600);
+        frame.setSize(600, 700);
 
         //set the Frame to exit on close
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
