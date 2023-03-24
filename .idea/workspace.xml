@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43b1aad4-ee97-46be-8c0f-5a692b3196b7" name="Changes" comment="implementing winning conditions">
+    <list default="true" id="43b1aad4-ee97-46be-8c0f-5a692b3196b7" name="Changes" comment="implementing line border on the winning cells">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TicTacToe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe.java" afterDir="false" />
     </list>
@@ -105,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679652857797</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="implementing line border on the winning cells">
+      <created>1679657900616</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1679657900616</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -125,6 +132,7 @@
     <MESSAGE value="frame + x + 0" />
     <MESSAGE value="frame + x + 0." />
     <MESSAGE value="implementing winning conditions" />
-    <option name="LAST_COMMIT_MESSAGE" value="implementing winning conditions" />
+    <MESSAGE value="implementing line border on the winning cells" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementing line border on the winning cells" />
   </component>
 </project>
