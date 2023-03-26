@@ -87,12 +87,17 @@ public class TicTacToe extends JFrame implements ActionListener{
             //Check rows
             //private boolean player1Turn = true;
 
+
+
             for(int i = 0; i < rows; i++){
-                if(buttons[i][0].getText().equals(buttons[i][1].getText()) && buttons[i][0].getText().equals(buttons[i][2].getText()) && !buttons[i][0].getText().equals("")) {
-                    winner = buttons[i][0].getText();
-                    buttons[i][0].setBorder(BorderFactory.createLineBorder(Color.GREEN, 5));
-                    buttons[i][1].setBorder(BorderFactory.createLineBorder(Color.GREEN, 5));
-                    buttons[i][2].setBorder(BorderFactory.createLineBorder(Color.GREEN, 5));
+                
+                for(int j = 0; j < cols; j++){
+
+                //if(buttons[i][0].getText().equals(buttons[i][1].getText()) && buttons[i][0].getText().equals(buttons[i][2].getText()) && !buttons[i][0].getText().equals("")) {
+                    //winner = buttons[i][0].getText();
+//                    buttons[i][0].setBorder(BorderFactory.createLineBorder(Color.GREEN, 5));
+//                    buttons[i][1].setBorder(BorderFactory.createLineBorder(Color.GREEN, 5));
+//                    buttons[i][2].setBorder(BorderFactory.createLineBorder(Color.GREEN, 5));
 
                 }
             }
